@@ -45,7 +45,20 @@ export default defineNuxtConfig({
   },
 
   // auto import components
-  components: true,
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+    {
+      path: '~/components/global',
+      pathPrefix: false,
+    },
+    {
+      path: '~/components/content',
+      pathPrefix: false,
+    },
+  ],
 
   // vite plugins
   vite: {
@@ -66,16 +79,6 @@ export default defineNuxtConfig({
     // global transition
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
-  },
-
-  // localization - i18n config
-  intlify: {
-    localeDir: 'locales',
-    vueI18n: {
-      locale: 'en',
-      fallbackLocale: 'en',
-      availableLocales: ['en', 'id', 'ja', 'ko'],
-    },
   },
 
   // vueuse

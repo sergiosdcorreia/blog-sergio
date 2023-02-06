@@ -34,5 +34,61 @@ html.dark {
   }
 }
 
+.blog-container {
+  background-color: #222;
+  box-shadow: inset 60px 0 120px #f0f, inset -60px 0 120px #0ff;
+  padding: 2em;
+}
+
+.hero, .content-doc {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #eee;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #eee;
+  margin-top: 0;
+}
+
+p, span {
+  color: #eee;
+}
+
+p {
+  padding: 0 2em 0 2em;
+}
+
+span {
+  font-weight: 100;
+  font-size: 0.75em;
+}
+
+.movie-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  img {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    max-width: 100%;
+  }
+}
+
 // animations
 @import 'animations/transitions';
